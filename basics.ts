@@ -82,3 +82,25 @@ function add(a: number, b: number) {
 function printOutput(value: any) {
   console.log(value);
 }
+
+
+// Generics
+
+// TypeScript here does not detect the returned type. It returns: any[]
+// function insertAtBeginning(array: any[], value: any) {
+// We need to set <T>, T parameters to return its type
+function insertAtBeginning<T>(array: T[], value: T) {
+  const newArray = [value, ...array];
+  return newArray;
+}
+
+const numberArray = [1, 2, 3];
+const stringArray = ['a', 'b', 'c'];
+
+const updatedNumberArray = insertAtBeginning(numberArray, -1); // [-1, 1, 2, 3]
+const updatedStringArray = insertAtBeginning(stringArray, 'd'); // ['d', 'a', 'b', 'c']
+// error
+// numberArray[0].split('');
+
+// valid
+updatedStringArray[0].split('');
