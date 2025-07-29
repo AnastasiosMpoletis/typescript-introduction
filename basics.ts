@@ -48,3 +48,13 @@ let people: {
   name: string,
   age: number
 }[];
+
+
+//Type inference
+
+// reduntant definition
+// let course: string = 'React - The Complete Guide';
+let course = 'React - The Complete Guide';
+
+// course automatically defined as string
+// course = 22;
