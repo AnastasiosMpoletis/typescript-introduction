@@ -22,13 +22,13 @@ instructor = false;
 // More complex types
 
 // array
-let hobbies: string[]; 
+let hobbies: string[];
 hobbies = ['Sports', 'Coocking'];
 
 // object
 // TypeScript default type fallback
 // let person; = let person: any;
-let person: { 
+let person: {
   name: string,
   age: number
 };
@@ -54,7 +54,12 @@ let people: {
 
 // reduntant definition
 // let course: string = 'React - The Complete Guide';
-let course = 'React - The Complete Guide';
+// let course = 'React - The Complete Guide';
 
 // course automatically defined as string
+// error
 // course = 22;
+
+let course: string | number = 'React - The Complete Guide'; // union types. Set multiple types for a variable
+// valid
+course = 22; 
