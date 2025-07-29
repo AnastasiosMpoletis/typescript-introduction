@@ -25,13 +25,21 @@ instructor = false;
 let hobbies: string[];
 hobbies = ['Sports', 'Coocking'];
 
-// object
-// TypeScript default type fallback
-// let person; = let person: any;
-let person: {
+// Create a type
+type Person = {
   name: string,
   age: number
 };
+
+// object
+// TypeScript default type fallback
+// let person; = let person: any;
+// let person: {
+//   name: string,
+//   age: number
+// };
+
+let person: Person;
 
 person = {
   name: "Pegasus",
@@ -44,10 +52,7 @@ person = {
 // };
 
 // array of objects
-let people: {
-  name: string,
-  age: number
-}[];
+let people: Person[];
 
 
 //Type inference
