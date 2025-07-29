@@ -1,8 +1,10 @@
 // Primitives: number, string, boolean
-// More complex: arrays, objects
+// More complex types: arrays, objects
 // Function types, parameters
 
+
 // Primitives
+
 let age: number = 13;
 age = 14;
 
@@ -12,6 +14,37 @@ userName = 'Doggo';
 let instructor: boolean = true;
 instructor = false;
 
-let hobbies: null;
+// let hobbies: null;
 // error
 // hobbies = 'Basketball';
+
+
+// More complex types
+
+// array
+let hobbies: string[]; 
+hobbies = ['Sports', 'Coocking'];
+
+// object
+// TypeScript default type fallback
+// let person; = let person: any;
+let person: { 
+  name: string,
+  age: number
+};
+
+person = {
+  name: "Pegasus",
+  age: 5
+};
+
+// error
+// person = {
+//   isEmployee: true
+// };
+
+// array of objects
+let people: {
+  name: string,
+  age: number
+}[];
