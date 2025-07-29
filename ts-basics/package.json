@@ -1,0 +1,23 @@
+{
+  "name": "typescript-introduction",
+  "version": "1.0.0",
+  "description": "Typescript Introduction",
+  "main": "no-typescript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnastasiosMpoletis/typescript-introduction.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnastasiosMpoletis/typescript-introduction/issues"
+  },
+  "homepage": "https://github.com/AnastasiosMpoletis/typescript-introduction#readme",
+  "dependencies": {
+    "typescript": "^5.8.3"
+  }
+}
