@@ -55,7 +55,7 @@ person = {
 let people: Person[];
 
 
-//Type inference
+// Type inference
 
 // reduntant definition
 // let course: string = 'React - The Complete Guide';
@@ -67,4 +67,18 @@ let people: Person[];
 
 let course: string | number = 'React - The Complete Guide'; // union types. Set multiple types for a variable
 // valid
-course = 22; 
+course = 22;
+
+
+// Functions & types
+
+// Reduntant, but we can set a type like this
+// function add(a: number, b: number): number {
+function add(a: number, b: number) {
+  return a + b; // Type inference
+}
+
+// function printOutput(value: any): void {
+function printOutput(value: any) {
+  console.log(value);
+}
